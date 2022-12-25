@@ -1,0 +1,95 @@
+*** Message Type: info ***
+When: Sun Dec 25 06:22:37 PM IST 2022
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s086
+User: MSIS
+Host: localhost
+Platform: Linux/x86_64/3.10.0-1062.el7.x86_64
+Started: Sun Dec 25 06:22:37 PM IST 2022
+Command: /home/installs/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:localhost:58617 -64BIT -nocopyright
+Work Directory: /home/MSIS/Documents/sujan/HLDD/seq_mul
+ 
+*** Message Type: info ***
+When: Sun Dec 25 06:22:37 PM IST 2022
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Sun Dec 25 06:22:40 PM IST 2022
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Sun Dec 25 06:22:41 PM IST 2022
+Connect to Simulator
+      Design: worklib.regA_tb:sv
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL: ncsim(64)       15.20-s086
+        User: MSIS
+        Host: localhost
+Time Started: Sun Dec 25 06:22:36 PM IST 2022
+  Process ID: 5147
+   Directory: /home/MSIS/Documents/sujan/HLDD/seq_mul
+     Command: irun +access+rwc controlpath.sv datapath.sv testbench.sv +gui
+
+ 
+*** Message Type: info ***
+When: Sun Dec 25 06:22:42 PM IST 2022
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Sun Dec 25 06:25:16 PM IST 2022
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Sun Dec 25 06:34:18 PM IST 2022
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Sun Dec 25 07:35:12 PM IST 2022
+Exit NC-Sim: user
+      Design: worklib.regA_tb:sv
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL: ncsim(64)       15.20-s086
+        User: MSIS
+        Host: localhost
+Time Started: Sun Dec 25 06:22:36 PM IST 2022
+  Process ID: 5147
+   Directory: /home/MSIS/Documents/sujan/HLDD/seq_mul
+     Command: irun +access+rwc controlpath.sv datapath.sv testbench.sv +gui
+
+ 
+*** Message Type: error ***
+When: Sun Dec 25 07:35:12 PM IST 2022
+NC-Sim Crashed:
+      Design: worklib.regA_tb:sv
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL: ncsim(64)       15.20-s086
+        User: MSIS
+        Host: localhost
+Time Started: Sun Dec 25 06:22:36 PM IST 2022
+  Process ID: 5147
+   Directory: /home/MSIS/Documents/sujan/HLDD/seq_mul
+     Command: irun +access+rwc controlpath.sv datapath.sv testbench.sv +gui
+      Design: worklib.regA_tb:sv
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       15.20-s086
+        User: MSIS
+        Host: localhost
+Time Started: Sun Dec 25 06:22:36 PM IST 2022
+  Process ID: 5147
+   Directory: /home/MSIS/Documents/sujan/HLDD/seq_mul
+     Command: irun +access+rwc controlpath.sv datapath.sv testbench.sv +gui
+
+Outstanding STRAP Requests:
+        strap::reinvoke savestate /home/MSIS/Documents/sujan/HLDD/seq_mul/.simvision/5181_MSIS_vl-07_autosave.tcl {# NC-Sim Command File
+# TOOL:  ncsim(64)       15.20-s086
+#
+} {simvision -input /home/MSIS/Documents/sujan/HLDD/seq_mul/.simvision/5181_MSIS_vl-07_autosave.tcl.svcf}
+ 
+*** Message Type: info ***
+When: Sun Dec 25 07:35:17 PM IST 2022
+SimVision Exit.
+ 

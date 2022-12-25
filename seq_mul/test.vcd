@@ -1,0 +1,249 @@
+$date
+    Dec 26, 2022  01:36:42
+$end
+$version
+    TOOL:	ncsim(64)	15.20-s086
+$end
+$timescale
+    1 ns
+$end
+
+$scope module regA_tb $end
+$var reg       1 !    clk  $end
+
+$scope module intf $end
+$var wire      1 "    clk  $end
+$var reg       2 #    A [1:0] $end
+$var reg       2 $    B [1:0] $end
+$var reg       4 %    product [3:0] $end
+$var reg       1 &    loadA  $end
+$var reg       1 '    loadB  $end
+$var reg       1 (    decB  $end
+$var reg       1 )    loadF  $end
+$var reg       1 *    clear  $end
+$var reg       1 +    zero  $end
+$var reg       1 ,    start  $end
+$var reg       2 -    P [1:0] $end
+$var reg       2 .    Q [1:0] $end
+$upscope $end
+
+
+$scope module dut $end
+
+$scope module r1 $end
+$var wire      2 /    A [1:0] $end
+$var wire      1 0    loadA  $end
+$var wire      1 "    clk  $end
+$var reg       2 1    P [1:0] $end
+$upscope $end
+
+
+$scope module r2 $end
+$var wire      2 2    B [1:0] $end
+$var wire      1 3    loadB  $end
+$var wire      1 4    decB  $end
+$var wire      1 "    clk  $end
+$var reg       2 5    Q [1:0] $end
+$upscope $end
+
+
+$scope module r3 $end
+$var wire      2 6    P [1:0] $end
+$var wire      1 7    loadF  $end
+$var wire      1 8    decB  $end
+$var wire      1 "    clk  $end
+$var reg       4 9    product [3:0] $end
+$var reg       2 :    Q [1:0] $end
+$var reg       1 ;    clear  $end
+$upscope $end
+
+
+$scope module r4 $end
+$var wire      2 <    B [1:0] $end
+$var wire      1 "    clk  $end
+$var reg       1 =    zero  $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module dut1 $end
+$var reg      32 >    state [31:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+bx #
+bx $
+bx %
+x&
+x'
+x(
+x)
+x*
+x+
+1,
+bx -
+bx .
+bx /
+x0
+bx 1
+bx 2
+x3
+x4
+bx 5
+bx 6
+x7
+x8
+bx 9
+bx :
+x;
+bx <
+x=
+b0 >
+$end
+#5
+1!
+1"
+b1 >
+1&
+10
+#10
+0!
+0"
+#15
+1!
+1"
+b10 >
+0&
+1'
+0(
+08
+04
+13
+00
+#20
+0!
+0"
+#25
+1!
+1"
+b11 >
+0'
+1(
+1)
+17
+18
+14
+03
+b0 9
+b0 %
+#30
+0!
+0"
+#35
+1!
+1"
+bx 9
+bx %
+#40
+0!
+0"
+#45
+1!
+1"
+#50
+0!
+0"
+#55
+1!
+1"
+#60
+0!
+0"
+#65
+1!
+1"
+#70
+0!
+0"
+#75
+1!
+1"
+#80
+0!
+0"
+#85
+1!
+1"
+#90
+0!
+0"
+#95
+1!
+1"
+#100
+0!
+0"
+#105
+1!
+1"
+#110
+0!
+0"
+#115
+1!
+1"
+#120
+0!
+0"
+#125
+1!
+1"
+#130
+0!
+0"
+#135
+1!
+1"
+#140
+0!
+0"
+#145
+1!
+1"
+#150
+0!
+0"
+#155
+1!
+1"
+#160
+0!
+0"
+#165
+1!
+1"
+#170
+0!
+0"
+#175
+1!
+1"
+#180
+0!
+0"
+#185
+1!
+1"
+#190
+0!
+0"
+#195
+1!
+1"
+#200

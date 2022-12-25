@@ -1,0 +1,114 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Dec 25, 2022 at 18:17:03 IST
+irun
+	+access+rwc
+	ram_tb.sv
+	+write
+	+gui
+
+   User defined plus("+") options:
+	+write
+
+Recompiling... reason: file './generator.sv' is newer than expected.
+	expected: Tue Dec 20 12:41:49 2022
+	actual:   Sun Dec 25 17:49:28 2022
+file: ram_tb.sv
+				rgen.randomize();
+				             |
+ncvlog: *W,FUNTSK (generator.sv,21|17): function called as a task without void'().
+(`include file: generator.sv line 21, `include file: ram_environment.sv line 1, file: ram_tb.sv line 5)
+				rgen.randomize();
+				             |
+ncvlog: *W,FUNTSK (generator.sv,31|17): function called as a task without void'().
+(`include file: generator.sv line 31, `include file: ram_environment.sv line 1, file: ram_tb.sv line 5)
+				rgen.randomize();
+				             |
+ncvlog: *W,FUNTSK (generator.sv,43|17): function called as a task without void'().
+(`include file: generator.sv line 43, `include file: ram_environment.sv line 1, file: ram_tb.sv line 5)
+				rgen.randomize();
+				             |
+ncvlog: *W,FUNTSK (generator.sv,54|17): function called as a task without void'().
+(`include file: generator.sv line 54, `include file: ram_environment.sv line 1, file: ram_tb.sv line 5)
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 4
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ram_package
+		$unit_0x1bc4975c
+		ram_tb
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.\$unit_0x1bc4975c :compilation_unit <0x08408870>
+			streams:   8, words: 12081
+		worklib.\$unit_0x1bc4975c :compilation_unit <0x187adde1>
+			streams:  10, words: 12456
+		worklib.\$unit_0x1bc4975c :compilation_unit <0x192824e9>
+			streams:   8, words: 17547
+		worklib.\$unit_0x1bc4975c :compilation_unit <0x3a681ef6>
+			streams:   0, words:     0
+		worklib.\$unit_0x1bc4975c :compilation_unit <0x72c6118d>
+			streams:   9, words: 55445
+		worklib.ram:sv <0x02e8deb2>
+			streams:   1, words:  1283
+		worklib.ram_env:sv <0x69804ed2>
+			streams:  10, words: 10793
+		worklib.ram_tb:sv <0x6171e1b0>
+			streams:   4, words:  1388
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    2       2
+		Interfaces:                 1       1
+		Programs:                   1       1
+		Verilog packages:           1       1
+		Registers:                 44      64
+		Scalar wires:               1       -
+		Always blocks:              2       2
+		Initial blocks:            10      10
+		Parallel blocks:            2       2
+		Pseudo assignments:         1       1
+		Compilation units:          1       1
+		SV Class declarations:      5       5
+		SV Class specializations:   5       5
+	Writing initial simulation snapshot: worklib.ram_tb:sv
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /home/installs/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm ram_tb.dut.mem ram_tb.ram_int.address ram_tb.ram_int.clk ram_tb.ram_int.cs ram_tb.ram_int.data_in ram_tb.ram_int.data_out ram_tb.ram_int.oe ram_tb.ram_int.reset ram_tb.ram_int.we
+Created probe 1
+ncsim> run
+stop -create -name Randomize -randomize
+Created stop Randomize
+
+                   0[GENERATOR] Write operation is in progress data_in = 188
+                   0[GENERATOR] Write operation is in progress data_in = 126
+                   0[GENERATOR] Write operation is in progress data_in = 182
+                   0[GENERATOR] Write operation is in progress data_in = 5
+                   0[GENERATOR] Write operation is in progress data_in = 161
+                   5[MONITOR] DUT to Monitor data_in=  0, address =   0, data_out=00000000
+[DRIVER] write operation is initiated. DATA_IN=bc, Address=03
+                  55[MONITOR] DUT to Monitor data_in=188, address =   3, data_out=00000000
+[DRIVER] write operation is initiated. DATA_IN=7e, Address=53
+                 105[MONITOR] DUT to Monitor data_in=126, address =  83, data_out=00000000
+[DRIVER] write operation is initiated. DATA_IN=b6, Address=5a
+                 155[MONITOR] DUT to Monitor data_in=182, address =  90, data_out=00000000
+[DRIVER] write operation is initiated. DATA_IN=05, Address=17
+                 205[MONITOR] DUT to Monitor data_in=  5, address =  23, data_out=00000000
+[DRIVER] write operation is initiated. DATA_IN=a1, Address=7f
+                 255[MONITOR] DUT to Monitor data_in=161, address = 127, data_out=00000000
+Simulation complete via $finish(1) at time 1 US + 0
+./ram_tb.sv:23 	#1000 $finish;
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	irun(64)	15.20-s086: Exiting on Dec 25, 2022 at 18:18:24 IST  (total: 00:01:21)

@@ -1,0 +1,132 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Dec 26, 2022 at 01:54:25 IST
+irun
+	+access+rwc
+	testbench.sv
+	+gui
+Recompiling... reason: file './datapath.sv' is newer than expected.
+	expected: Sun Dec 25 23:41:50 2022
+	actual:   Mon Dec 26 01:40:20 2022
+file: testbench.sv
+	logic [1:0]A;
+	           |
+ncvlog: *W,ILLPDX (datapath.sv,4|12): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'A') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 12, file: testbench.sv line 3)
+	logic [1:0]P;
+	           |
+ncvlog: *W,ILLPDX (datapath.sv,5|12): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'P') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 12, file: testbench.sv line 3)
+	logic clk,loadA;	
+	        |
+ncvlog: *W,ILLPDX (datapath.sv,6|9): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'clk') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 12, file: testbench.sv line 3)
+	logic clk,loadA;	
+	              |
+ncvlog: *W,ILLPDX (datapath.sv,6|15): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'loadA') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 12, file: testbench.sv line 3)
+	logic [1:0]B;
+	           |
+ncvlog: *W,ILLPDX (datapath.sv,16|12): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'B') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 31, file: testbench.sv line 3)
+	logic [1:0]Q;
+	           |
+ncvlog: *W,ILLPDX (datapath.sv,17|12): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'Q') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 31, file: testbench.sv line 3)
+	logic clk,loadB,decB;
+	        |
+ncvlog: *W,ILLPDX (datapath.sv,18|9): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'clk') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 31, file: testbench.sv line 3)
+	logic clk,loadB,decB;
+	              |
+ncvlog: *W,ILLPDX (datapath.sv,18|15): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'loadB') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 31, file: testbench.sv line 3)
+	logic clk,loadB,decB;
+	                   |
+ncvlog: *W,ILLPDX (datapath.sv,18|20): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'decB') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 31, file: testbench.sv line 3)
+	logic [1:0]P,Q;
+	           |
+ncvlog: *W,ILLPDX (datapath.sv,34|12): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'P') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 48, file: testbench.sv line 3)
+	logic [3:0]product;
+	                 |
+ncvlog: *W,ILLPDX (datapath.sv,35|18): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'product') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 48, file: testbench.sv line 3)
+	logic loadF,clear,clk;
+	          |
+ncvlog: *W,ILLPDX (datapath.sv,36|11): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'loadF') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 48, file: testbench.sv line 3)
+	logic loadF,clear,clk;
+	                    |
+ncvlog: *W,ILLPDX (datapath.sv,36|21): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'clk') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 48, file: testbench.sv line 3)
+	logic [1:0]B;
+	           |
+ncvlog: *W,ILLPDX (datapath.sv,51|12): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'B') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 58, file: testbench.sv line 3)
+	logic zero;
+	         |
+ncvlog: *W,ILLPDX (datapath.sv,52|10): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'zero') [12.3.4(IEEE-2001)].
+(`include file: datapath.sv line 58, file: testbench.sv line 3)
+		this.gen2mbox=gen2mbox;
+		   |
+ncvlog: *E,EXPSMC (mul_generator.sv,6|5): expecting a semicolon (';') [3.10(IEEE)].
+(`include file: mul_generator.sv line 6, `include file: mul_environment.sv line 1, file: testbench.sv line 6)
+task mul_generator::run();
+                 |
+ncvlog: *E,UNDIDN (mul_generator.sv,12|17): 'mul_generator': undeclared identifier Expecting a class type name.
+(`include file: mul_generator.sv line 12, `include file: mul_environment.sv line 1, file: testbench.sv line 6)
+	mul_transaction mdrv;
+	              |
+ncvlog: *E,NOIPRT (mul_driver.sv,2|15): Unrecognized declaration 'mul_transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: mul_driver.sv line 2, `include file: mul_environment.sv line 2, file: testbench.sv line 6)
+		this.mbox2drv=mbox2drv;
+		   |
+ncvlog: *E,EXPSMC (mul_driver.sv,7|5): expecting a semicolon (';') [3.10(IEEE)].
+(`include file: mul_driver.sv line 7, `include file: mul_environment.sv line 2, file: testbench.sv line 6)
+	extern task send_to_dut(mul_transaction mul_drive);
+	                                      |
+ncvlog: *E,SVNOTY (mul_driver.sv,12|39): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: mul_driver.sv line 12, `include file: mul_environment.sv line 2, file: testbench.sv line 6)
+task mul_driver::run();
+              |
+ncvlog: *E,UNDIDN (mul_driver.sv,15|14): 'mul_driver': undeclared identifier Expecting a class type name.
+(`include file: mul_driver.sv line 15, `include file: mul_environment.sv line 2, file: testbench.sv line 6)
+task mul_driver::send_to_dut(input mul_transaction mul_drive);
+              |
+ncvlog: *E,UNDIDN (mul_driver.sv,24|14): 'mul_driver': undeclared identifier Expecting a class type name.
+(`include file: mul_driver.sv line 24, `include file: mul_environment.sv line 2, file: testbench.sv line 6)
+task mul_driver::send_to_dut(input mul_transaction mul_drive);
+                                                 |
+ncvlog: *E,SVNOTY (mul_driver.sv,24|49): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: mul_driver.sv line 24, `include file: mul_environment.sv line 2, file: testbench.sv line 6)
+	mul_generator mulGen=new(gen2drv);
+	                   |
+ncvlog: *E,ILLPDL (mul_environment.sv,5|20): Mixing of ansi & non-ansi style port declaration is not legal.
+(`include file: mul_environment.sv line 5, file: testbench.sv line 6)
+	mul_generator mulGen=new(gen2drv);
+	                    |
+ncvlog: *E,EXPSMC (mul_environment.sv,5|21): expecting a semicolon (';') [12.3.2(IEEE)].
+(`include file: mul_environment.sv line 5, file: testbench.sv line 6)
+	mul_generator mulGen=new(gen2drv);
+	                                |
+ncvlog: *E,EXPSMC (mul_environment.sv,5|33): expecting a semicolon (';') [12.3.2(IEEE)].
+(`include file: mul_environment.sv line 5, file: testbench.sv line 6)
+	mul_driver mulDrv=new(gen2drv,m);
+	                |
+ncvlog: *E,ILLPDL (mul_environment.sv,6|17): Mixing of ansi & non-ansi style port declaration is not legal.
+(`include file: mul_environment.sv line 6, file: testbench.sv line 6)
+	mul_driver mulDrv=new(gen2drv,m);
+	                 |
+ncvlog: *E,EXPSMC (mul_environment.sv,6|18): expecting a semicolon (';') [12.3.2(IEEE)].
+(`include file: mul_environment.sv line 6, file: testbench.sv line 6)
+	mul_driver mulDrv=new(gen2drv,m);
+	                               |
+ncvlog: *E,EXPSMC (mul_environment.sv,6|32): expecting a semicolon (';') [12.3.2(IEEE)].
+(`include file: mul_environment.sv line 6, file: testbench.sv line 6)
+	program worklib.mul_environment:sv
+		errors: 6, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 8, warnings: 0
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	irun(64)	15.20-s086: Exiting on Dec 26, 2022 at 01:54:25 IST  (total: 00:00:00)
